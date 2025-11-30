@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Formulário de Serviços (HTML puro)</title>
+</head>
+<body>
+  <h1>Registro de Serviço</h1>
+
+  <form action="#" method="post">
+    <label>
+      Nome do cliente:<br>
+      <input type="text" name="nome" required>
+    </label>
+    <br><br>
+
+    <label>
+      Telefone:<br>
+      <input type="tel" name="telefone">
+    </label>
+    <br><br>
+
+    <label>
+      Escola:<br>
+      <select name="escola">
+        <option value="">-- Nenhuma --</option>
+        <option>CED 01 da Estrutural</option>
+        <option>CED 04 de Taguatinga</option>
+        <option>CEM 06 de Taguatinga</option>
+        <option>CED 07 de Taguatinga</option>
+        <option>CED 07 da Ceilândia</option>
+        <option>CEM 09 da Ceilândia</option>
+        <option>CED 619 de Samambaia</option>
+        <option>CEM 414 de Samambaia</option>
+        <option>CEM 304 de Samambaia</option>
+        <option>CED 416 de Santa Maria</option>
+        <option>CEM 404 Santa Maria</option>
+        <option>CED 01 Itapoã</option>
+        <option>CED Estância III Planaltina</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>
+      Tipo de serviço:<br>
+      <input type="text" name="tipoServico" required>
+    </label>
+    <br><br>
+
+    <label>
+      Descrição do serviço:<br>
+      <textarea name="descricao" rows="3" cols="40"></textarea>
+    </label>
+    <br><br>
+
+    <label>
+      Preço (R$):<br>
+      <input type="number" name="preco" step="0.01" min="0">
+    </label>
+    <br><br>
+
+    <label>
+      Pago:
+      <input type="checkbox" name="pago" value="sim">
+    </label>
+    <br><br>
+
+    <label>
+      Data do serviço:<br>
+      <input type="date" name="dataServico">
+    </label>
+    <br><br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+  </form>
+
+</body>
+</html>
